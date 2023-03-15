@@ -25,6 +25,42 @@ This project integrates a set of geometric and least-squares methods to:
 
 ---
 
+## Visual Results — Spectral Matching (SID) on `Full.tif`
+
+The figures below summarize **Spectral Information Divergence (SID)** matching results on the **Full** HySpex subset.  
+For each endmember, the visualization is organized as:
+
+- **SID distance map** (lower values = stronger match to the reference signature)
+- **Original RGB**, **Segmented mask** (thresholded), and **Overlay** (detections on RGB)
+
+Thresholds are reported in each figure and match the experimental setting discussed in the technical report.
+
+### Bitumen — SID (threshold = 20)
+
+![SID Bitumen - Full subset](assets/sid_bitumen.png)
+
+### Red Metal Sheets — SID (threshold = 20)
+
+![SID Red Metal Sheets - Full subset](assets/sid_red_metal.png)
+
+### Blue Fabric — SID (threshold = 20)
+
+![SID Blue Fabric - Full subset](assets/sid_blue_fabric.png)
+
+### Red Fabric — SID (threshold = 20)
+
+![SID Red Fabric - Full subset](assets/sid_red_fabric.png)
+
+### Green Fabric — SID (threshold = 8)
+
+![SID Green Fabric - Full subset](assets/sid_green_fabric.png)
+
+### Grass — SID (threshold = 20)
+
+![SID Grass - Full subset](assets/sid_grass.png)
+
+---
+
 ## Dataset
 
 Experiments are conducted on the public benchmark dataset:
@@ -237,9 +273,6 @@ Applies **Maximum Abundance Classification (MAC)**:
 ---
 
 ## Figures
-
-**Targets ROI overlay**
-![Targets ROI overlay](assets/target_roi.png)
 
 **Manual vs DLR spectral signatures**
 ![Spectral signatures comparison](assets/signatures_comparison.png)
